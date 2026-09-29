@@ -1,6 +1,7 @@
 # Clippy.WPF
 
-![Clippy Preview](https://github.com/dolunay/Clippy.Core.WPF/blob/main/Site/Example%20Clippy%2001.png?raw=true)
+![Clippy Preview](Clippy.Wpf.Demo/documents/example_small.png)
+![Clippy Preview (Turkish)](Clippy.Wpf.Demo/documents/example_tr.png)
 
 Clippy.WPF is a C# library which allows the creation and interaction of Clippy characters. The original [Clippy.WPF repository](https://github.com/samoatesgames/Clippy.WPF) is referenced as the project source.
 
@@ -8,7 +9,7 @@ Clippy.WPF is a C# library which allows the creation and interaction of Clippy c
 ![NuGet Downloads](https://img.shields.io/nuget/dt/WPF.Clippy)
 
 
-![Clippy Preview](https://github.com/dolunay/Clippy.Core.WPF/blob/main/Site/Bonzi.gif?raw=true)
+![Bonzi Preview](Clippy.Wpf.Demo/documents/bonzi.gif)
 
 ## Features
 

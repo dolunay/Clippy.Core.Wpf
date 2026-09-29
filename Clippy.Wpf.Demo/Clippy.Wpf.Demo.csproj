@@ -9,4 +9,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Wpf.Clippy\Wpf.Clippy.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="documents\" />
+  </ItemGroup>
 </Project>
