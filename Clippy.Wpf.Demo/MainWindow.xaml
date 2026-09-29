@@ -1,0 +1,51 @@
+﻿<Window x:Class="Clippy.Wpf.Demo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Clippy.Wpf.Demo"
+        xmlns:viewModels="clr-namespace:Clippy.Wpf.Demo.ViewModels"
+        mc:Ignorable="d"
+        d:DataContext="{d:DesignInstance viewModels:MainWindowViewModel}"
+        ResizeMode="NoResize"
+        Title="Clippy.WPF Demo" 
+        Height="400" Width="400" SizeToContent="Height">
+    <StackPanel Margin="2">
+        <TextBlock Text="{Binding SpeechVoiceNotice}"
+                   TextWrapping="Wrap"
+                   Margin="4"
+                   Padding="8"
+                   Background="#FFFFF2CC" />
+
+        <TextBlock Margin="4,8,4,2">Speech language (installed voices):</TextBlock>
+        <ComboBox ItemsSource="{Binding SpeechLanguages}"
+                  SelectedItem="{Binding SelectedSpeechLanguage, UpdateSourceTrigger=PropertyChanged}"
+                  DisplayMemberPath="DisplayName"
+                  IsEnabled="{Binding HasSpeechLanguages}"
+                  Margin="4,0,4,4" />
+
+        <TextBlock Text="{Binding SpeechSampleText}"
+                   TextWrapping="Wrap"
+                   Margin="4,2,4,8" />
+        <Button Content="Test selected voice"
+                Command="{Binding SpeakSample}"
+                IsEnabled="{Binding CanSpeakSample}"
+                Margin="4,0,4,8" />
+
+        <TextBlock>Character:</TextBlock>
+        <ComboBox ItemsSource="{Binding Characters}"
+                  SelectedItem="{Binding SelectedCharacter}"
+        />
+
+        <TextBlock>Animation:</TextBlock>
+        <ComboBox ItemsSource="{Binding Animations}"
+                  SelectedItem="{Binding SelectedAnimation}"
+        />
+
+        <TextBlock>Visibility:</TextBlock>
+        <UniformGrid Columns="2">
+            <Button Content="Hide" Margin="1" Command="{Binding HideCharacter}" />
+            <Button Content="Show" Margin="1" Command="{Binding ShowCharacter}" />
+        </UniformGrid>
+    </StackPanel>
+</Window>

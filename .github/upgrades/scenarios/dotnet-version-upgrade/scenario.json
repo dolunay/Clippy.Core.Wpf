@@ -1,0 +1,18 @@
+{
+  "scenarioId": "dotnet-version-upgrade",
+  "operationId": "3f320518-c9cf-4fc1-86f1-9034e50ea8b7",
+  "description": "Upgrade .NET projects to newer .NET versions, including guidance on current release status, support lifecycle (LTS/STS), and recommended upgrade targets.",
+  "startTime": "2026-09-29T10:10:40.4091929Z",
+  "lastUpdateTime": "2026-09-29T10:34:54.3280574Z",
+  "properties": {
+    "UpgradeTargetFramework": "net10.0",
+    "taskStates": {
+      "01-prerequisites": "Completed",
+      "02-sdk-projects": "Completed",
+      "03-wpf-clippy": "Completed",
+      "04-wpf-demo": "Completed",
+      "05-final-validation": "Completed"
+    }
+  },
+  "folderPath": ""
+}

@@ -1,0 +1,74 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>net10.0-windows;net9.0-windows;net8.0-windows</TargetFrameworks>
+    <Configuration Condition=" '$(Configuration)' == '' ">Release</Configuration>
+    <OutputType>Library</OutputType>
+    <IsPackable>true</IsPackable>
+    <PackageId>WPF.Clippy</PackageId>
+    <Version>1.0.0</Version>
+    <Title>WPF.Clippy</Title>
+    <Authors>samoatesgames</Authors>
+    <Description>Bring back animated clippy characters to your WPF applications</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/dolunay/Clippy.Core.WPF</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/dolunay/Clippy.Core.WPF</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageReleaseNotes>Initial public release.</PackageReleaseNotes>
+    <Copyright>Copyright Sam Oates Games © 2024</Copyright>
+    <PackageTags>Control Assistant</PackageTags>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <UseWPF>true</UseWPF>
+    <ImportWindowsDesktopTargets>true</ImportWindowsDesktopTargets>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="System.Speech" Version="10.0.12" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Clippy\data.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Clippy\map.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Rover\data.json" />
+    <EmbeddedResource Include="Resources\Merlin\data.json" />
+    <EmbeddedResource Include="Resources\Bonzi\data.json" />
+    <EmbeddedResource Include="Resources\F1\data.json" />
+    <EmbeddedResource Include="Resources\Genie\data.json" />
+    <EmbeddedResource Include="Resources\Genius\data.json" />
+    <EmbeddedResource Include="Resources\Links\data.json" />
+    <EmbeddedResource Include="Resources\Peedy\data.json" />
+    <EmbeddedResource Include="Resources\Rocky\data.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Merlin\map.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Rover\map.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Bonzi\map.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\F1\map.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Genie\map.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Genius\map.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Links\map.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Peedy\map.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Rocky\map.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
+</Project>
