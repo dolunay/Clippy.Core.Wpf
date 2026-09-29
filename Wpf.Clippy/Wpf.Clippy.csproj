@@ -7,14 +7,14 @@
     <PackageId>WPF.Clippy</PackageId>
     <Version>1.0.0</Version>
     <Title>WPF.Clippy</Title>
-    <Authors>samoatesgames</Authors>
+    <Authors>Dolunay</Authors>
     <Description>Bring back animated clippy characters to your WPF applications</Description>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/dolunay/Clippy.Core.WPF</PackageProjectUrl>
     <RepositoryUrl>https://github.com/dolunay/Clippy.Core.WPF</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageReleaseNotes>Initial public release.</PackageReleaseNotes>
-    <Copyright>Copyright Sam Oates Games © 2024</Copyright>
+    <Copyright>Copyright Dolunay © 2026</Copyright>
     <PackageTags>Control Assistant</PackageTags>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
